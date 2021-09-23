@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "RubikRegular";
+    src: url(../font/static/Rubik-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RubikMedium";
+    src: url(../font/static/Rubik-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: "RubikRegular";
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #333333;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logoText {
+    font-family: "RubikMedium";
+    font-size: 2em;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.headerSearch {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.searchField {
+    color: grey;
+    font-size: 1.5em;
+    padding: 5px;
+    width: 65%;
+    border-bottom: 2px solid grey;
+}
+
+.searchBut {
+    color: red;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.headerLogin {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.loginBut {
+    background: red;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.5em;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.mainNav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.navList {
+    display: flex;
+    width: 27%;
+    justify-content: space-between;
+}
+
+.navPoint {
+    font-family: "RubikMedium";
+    font-size: 2.5em;
+    font-weight: 400;
+    padding: 9px;
+}
+
+.navPoint:hover {
+    color: red;
+    border-bottom: 2px solid red;
+    padding: 7px;
+}
+
+.firstSection {
+    margin-top: 20px;
+}
+
+.headTxt {
+    padding: 10px; 
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "RubikMedium";
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.firstList {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flPoint {
+    width: 320px;
+}
+
+.flPointArt {
+    /* ~1.32 */
+    height: 422.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flPointContent {
+    height: 392.4px;
+    width: 290px;
+    color: white;
+}
+
+.flpa1 {
+    background: url(../img/flpi1.png);
+    background-size: cover;
+}
+
+.flpa2 {
+    background: url(../img/flpi2.png);
+    background-size: cover;
+}
+
+.flpa3 {
+    background: url(../img/flpi3.png);
+    background-size: cover;
+}
+
+.flpa4 {
+    background: url(../img/flpi4.png);
+    background-size: cover;
+}
+
+.flpa1:hover {
+    background: url(../img/flpi1_hover.jpg);
+    background-size: cover;
+}
+
+.flpa2:hover {
+    background: url(../img/flpi2_hover.jpg);
+    background-size: cover;
+}
+
+.flpa3:hover {
+    background: url(../img/flpi3_hover.jpg);
+    background-size: cover;
+}
+
+.flpa4:hover {
+    background: url(../img/flpi4_hover.jpg);
+    background-size: cover;
+}
+
+.flPointName {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.secondSection {
+    margin-top: 20px;
+}
+
+.secondList {
+    margin-top: 5px;
+}
+
+.slPoint {
+    height: 230px;
+    width: 320px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.slPointSmile {
+    height: 37%;
+    font-size: 3em;
+}
+
+.slPointName {
+    height: 25%;
+    font-size: 1.5em;
+    color: white;
+}
+
+.slp1 {
+    background: url(../img/smile1.png);
+    background-size: cover;
+}
+
+.slp2 {
+    background: url(../img/smile2.png);
+    background-size: cover;
+}
+
+.slp3 {
+    background: url(../img/smile3.png);
+    background-size: cover;
+}
+
+.slp4 {
+    background: url(../img/smile4.png);
+    background-size: cover;
+}
+
+.slp1:hover {
+    background: url(../img/smile1_hover.png);
+    background-size: cover;
+}
+
+.slp2:hover {
+    background: url(../img/smile2_hover.png);
+    background-size: cover;
+}
+
+.slp3:hover {
+    background: url(../img/smile3_hover.png);
+    background-size: cover;
+}
+
+.slp4:hover {
+    background: url(../img/smile4_hover.png);
+    background-size: cover;
+}
+
+.secondList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    margin-top: 10%;
+    display: flex;
+    margin-bottom: 3%;
+    justify-content: flex-start;
+}
+
+.footerTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerTxt p,a {
+    font-size: 1em;
+    padding-left: 30px;
+}
+
+.url {
+    color: #1f4766;
+}
