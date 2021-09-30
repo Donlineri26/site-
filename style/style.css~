@@ -34,6 +34,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #333333;
 }
 
 input {
@@ -53,11 +54,22 @@ input {
     flex-grow: 1;
 }
 
+.headerLeft a {
+    padding: 0;
+}
+
 .logoText {
+    /*font-family: "RubikMedium";
+    font-size: 2em;
+    font-weight: 400;*/
+    margin-left: 20px;
+}
+
+.logoText a {
     font-family: "RubikMedium";
     font-size: 2em;
     font-weight: 400;
-    margin-left: 20px;
+    padding: 0;
 }
 
 .headerSearch {
@@ -80,6 +92,27 @@ input {
     margin-left: 20px;
 }
 
+.unlogin {
+    display: flex;
+    font-size: 1.5em;
+    margin-left: 20px;
+    align-items: center;
+    height: 64px;
+}
+
+.unloginName {
+    margin-right: 30px;
+}
+
+.unlogin a {
+    padding: 0;
+}
+
+.unloginBut {
+    color: red;
+    font-size: 1em;
+}
+
 .headerLogin {
     flex-grow: 1;
     display: flex;
@@ -96,6 +129,10 @@ input {
     padding-right: 40px;
 }
 
+.loginBut:hover {
+    background: #CC221B; 
+}
+
 .mainNav {
     margin-top: 50px;
     display: flex;
@@ -109,13 +146,17 @@ input {
 }
 
 .navPoint {
-    font-family: "RubikMedium";
-    font-size: 2.5em;
-    font-weight: 400;
     padding: 9px;
 }
 
-.navPoint:hover {
+.navPoint a {
+    font-family: "RubikMedium";
+    font-size: 2.5em;
+    font-weight: 400;
+    padding: 0;
+}
+
+.navPointActive a {
     color: red;
     border-bottom: 2px solid red;
     padding: 7px;
@@ -292,9 +333,217 @@ input {
 
 .footerTxt p,a {
     font-size: 1em;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 
 .url {
     color: #1f4766;
+}
+
+.darken {
+    background: #000;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: .6;
+}
+
+.posDivForm {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm {
+    background: #fff;
+    border-radius: 8px;
+    width: 18%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.loginText {
+    font-family: "RubikMedium";
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.loginField, .passwordField, .checkBoxLabel {
+    color: grey;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.loginField, .passwordField {
+    margin-top: 40px;
+    border-bottom: 2px solid grey;
+}
+
+.checkBoxLabel {
+    color: #333333;
+}
+
+.checkBoxDiv {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.checkBoxField {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.checkBoxImg {
+    display: block;
+    background-image: url(../img/uncheck.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.checkBoxField:checked + .checkBoxImg {
+    background-image: url(../img/check.png);
+    background-repeat: no-repeat;
+}
+
+.loginForm a {
+    padding: 0;
+}
+
+.loginButton {
+    margin-top: 80px;
+    background: red;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.5em;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.loginButton:hover {
+    background: #CC221B; 
+}
+
+.channelList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    overflow-y: auto;
+    height: 500px;
+}
+
+.channelItem {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.channelImagePos {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.channelImgDiv {
+    width: 114px;
+    text-align: center;
+}
+
+.channelHead {
+    font-size: 1.5em;
+    font-family: "RubikMedium";
+}
+
+.channelTxt, .channelHead {
+    margin-bottom: 15px;
+}
+
+.channelTxt {
+    font-size: 1em;
+}
+
+.channelTxtActive {
+    color: red;
+}
+
+input[type="text"] {
+    color: black;
+    font-family: "RubikMedium";
+}
+
+input[type="password"] {
+    color: black;
+    font-family: "RubikMedium";
+}
+
+@media screen and (max-width: 1630px) {
+    .firstList {
+	flex-wrap: wrap;
+	gap: 1rem;
+    }
+    .secondList {
+	flex-wrap: wrap;
+	gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .channelImagePos {
+	width: 200px; 
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mainNav {
+	justify-content: flex-start; 
+    }
+    .header {
+	flex-wrap: wrap;
+	gap: 1rem;
+    }
+    .headerLeft {
+	flex-grow: 0; 
+    }
+    .headerSearch {
+	flex-grow: 0; 
+	justify-content: flex-start;
+    }
+    .headerLogin {
+	flex-grow: 0; 
+    }
+    .channelImagePos {
+	width: 120px;
+    }
+}
+
+@media screen and (max-height: 820px) {
+    .loginForm {
+	height: 80%;
+	width: 40%;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .loginForm {
+	height: 100%;
+	width: 100%;
+    }
 }

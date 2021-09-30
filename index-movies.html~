@@ -8,19 +8,19 @@
 <body>
     <div class="header">
         <div class="headerLeft">
-            <img class="logo" src="img/sign.png" alt="">
-            <p class="logoText">Видеосервис</p>
+	    <a href="index-movies.html"><img class="logo" src="img/sign.png" alt=""></a>
+	    <p class="logoText"><a href="index-movies.html">Видеосервис</a></p>
         </div>
         <div class="headerSearch">
             <input class="searchField" type="text" placeholder="Поиск...">
             <input class="searchBut" type="button" value="Найти">
         </div>
-	<a class="headerLogin" href="login.html"><input class="loginBut" type="button" value="Войти"></a>
+	<div class="headerLogin" href="#"><input class="loginBut" type="button" value="Войти"></div>
     </div>
     <div class="mainNav">
         <ul class="navList">
-            <li class="navPoint">Фильмы</li>
-            <li class="navPoint">Телеканалы</li>
+	    <li class="navPoint navPointActive"><a href="index-movies.html">Фильмы</a></li>
+	    <li class="navPoint"><a href="index-channels.html">Телеканалы</a></li>
         </ul>
     </div>
     <!-- div.firstSection>p.headTxt+div.firstList>(div.flPoint>(div.flPointArt>img.flPointImg+p.flPointContent)+p.flPointName)*4 -->
@@ -85,5 +85,23 @@
             <a class="url" href="htc-cs.ru">htc-cs.ru</a>
         </div>
     </div>
+    <div class="darken">
+    </div>
+<!--form.loginForm>p.loginText+input.loginField+input.passwordField+input.checkBoxField+label+input.loginButton-->
+    <div class="posDivForm">
+	<form class="loginForm" action="">
+	    <p class="loginText">Вход</p>
+	    <input class="loginField" type="text" placeholder="Логин">
+	    <input class="passwordField" type="password" placeholder="Пароль">
+	    <div class="checkBoxDiv">
+		<input class="checkBoxField" type="checkbox" id="checkBoxField">
+		<label class="checkBoxLabel" for="checkBoxField">Запомнить</label>
+		<label class="checkBoxImg" for="checkBoxField"></label>
+	    </div>
+	    <a href="index-movies_auth.html"><input class="loginButton" type="button" value="Войти"></a>
+	</form>
+    </div>
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

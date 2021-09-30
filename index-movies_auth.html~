@@ -2,25 +2,30 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>index-movies</title>
+    <title>index-movies_auth</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="header">
         <div class="headerLeft">
-	    <a href="index-movies.html"><img class="logo" src="img/sign.png" alt=""></a>
-	    <p class="logoText"><a href="index-movies.html">Видеосервис</a></p>
+	    <a href="index-movies_auth.html"><img class="logo" src="img/sign.png" alt=""></a>
+	    <p class="logoText"><a href="index-movies_auth.html">Видеосервис</a></p>
         </div>
         <div class="headerSearch">
             <input class="searchField" type="text" placeholder="Поиск...">
             <input class="searchBut" type="button" value="Найти">
         </div>
-	<div class="headerLogin" href="#"><input class="loginBut" type="button" value="Войти"></div>
+	<div class="headerLogin">
+	    <div class="unlogin">
+		<p class="unloginName">Константин К.</p>
+		<a href="index-movies.html"><input class="unloginBut" type="button" value="Выйти"></a>
+	    </div>
+	</div>
     </div>
     <div class="mainNav">
         <ul class="navList">
-	    <li class="navPoint navPointActive"><a href="index-movies.html">Фильмы</a></li>
-	    <li class="navPoint"><a href="index-channels.html">Телеканалы</a></li>
+	    <li class="navPoint navPointActive"><a href="index-movies_auth.html">Фильмы</a></li>
+	    <li class="navPoint"><a href="index-channels_auth.html">Телеканалы</a></li>
         </ul>
     </div>
     <!-- div.firstSection>p.headTxt+div.firstList>(div.flPoint>(div.flPointArt>img.flPointImg+p.flPointContent)+p.flPointName)*4 -->
@@ -95,10 +100,9 @@
 	    <input class="passwordField" type="password" placeholder="Пароль">
 	    <div class="checkBoxDiv">
 		<input class="checkBoxField" type="checkbox" id="checkBoxField">
-		<label class="checkBoxImg" for="checkBoxField"></label>
 		<label class="checkBoxLabel" for="checkBoxField">Запомнить</label>
 	    </div>
-	    <a href="index-movies_auth.html"><input class="loginButton" type="button" value="Войти"></a>
+	    <input class="loginButton" type="button" value="Войти">
 	</form>
     </div>
     <script src="script/jquery-3.6.0.min.js"></script>

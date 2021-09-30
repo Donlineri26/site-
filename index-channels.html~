@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>index-movies</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="headerLeft">
+	    <a href="index-movies.html"><img class="logo" src="img/sign.png" alt=""></a>
+	    <p class="logoText"><a href="index-movies.html">Видеосервис</a></p>
+        </div>
+        <div class="headerSearch">
+            <input class="searchField" type="text" placeholder="Поиск...">
+            <input class="searchBut" type="button" value="Найти">
+        </div>
+	<div class="headerLogin" href="#"><input class="loginBut" type="button" value="Войти"></div>
+    </div>
+    <div class="mainNav">
+        <ul class="navList">
+	    <li class="navPoint"><a href="index-movies.html">Фильмы</a></li>
+	    <li class="navPoint navPointActive"><a href="index-channels.html">Телеканалы</a></li>
+        </ul>
+    </div>
+    <!--div.channelList>(div.channelItem>img.channelLogo+div.channelText>p.channelHead+p.channelTxt1+p.channelTxt2+p.channelTxt3)*5-->
+    <div class="channelList">
+        <div class="channelItem">
+	    <div class="channelImagePos"><div class="channelImgDiv"><img class="channelLogo" src="img/ch1.png" alt=""></div></div>
+            <div class="channelText">
+                <p class="channelHead">Первый канал</p>
+                <p class="channelTxt channelTxtActive">13:00   Новости (с субтитрами)</p>
+                <p class="channelTxt">14:00   Давай поженимся</p>
+                <p class="channelTxt">15:00   Другие новости</p>
+            </div>
+        </div>
+        <div class="channelItem">
+	    <div class="channelImagePos"><div class="channelImgDiv"><img class="channelLogo" src="img/ch2.png" alt=""></div></div>
+            <div class="channelText">
+                <p class="channelHead">2x2</p>
+                <p class="channelTxt channelTxtActive">13:00   МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+                <p class="channelTxt">14:00   ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+                <p class="channelTxt">15:00   БУРДАШЕВ. Сезон 1, 20 серия</p>
+            </div>
+        </div>
+        <div class="channelItem">
+	    <div class="channelImagePos"><div class="channelImgDiv"><img class="channelLogo" src="img/ch3.png" alt=""></div></div>
+            <div class="channelText">
+                <p class="channelHead">РБК</p>
+                <p class="channelTxt channelTxtActive">13:00   ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+                <p class="channelTxt">14:00   ДЕНЬ. Главные темы</p>
+                <p class="channelTxt">15:00   Главные новости</p>
+            </div>
+        </div>
+        <div class="channelItem">
+	    <div class="channelImagePos"><div class="channelImgDiv"><img class="channelLogo" src="img/ch4.png" alt=""></div></div>
+            <div class="channelText">
+                <p class="channelHead">AMEDIA PREMIUM</p>
+                <p class="channelTxt channelTxtActive">13:00   Клиент всегда мёртв</p>
+                <p class="channelTxt">14:00   Голодные игры: Сойка-пересмешница. Часть I</p>
+                <p class="channelTxt">15:00   Секс в большом городе</p>
+            </div>
+        </div>
+        <div class="channelItem">
+	    <div class="channelImagePos"><div class="channelImgDiv"><img class="channelLogo" src="img/ch1.png" alt=""></div></div>
+            <div class="channelText">
+                <p class="channelHead">Первый канал</p>
+                <p class="channelTxt channelTxtActive">13:00   Новости (с субтитрами)</p>
+                <p class="channelTxt">14:00   Давай поженимся</p>
+                <p class="channelTxt">15:00   Другие новости</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img class="footerLogo" src="img/htc-cs-logo.png" alt="htc-cs-logo">
+        <div class="footerTxt">
+            <p class="address">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+            <p class="phone">+7 (3412) 93-88-61, 43-29-29</p>
+            <a class="url" href="htc-cs.ru">htc-cs.ru</a>
+        </div>
+    </div>
+    <div class="darken">
+    </div>
+<!--form.loginForm>p.loginText+input.loginField+input.passwordField+input.checkBoxField+label+input.loginButton-->
+    <div class="posDivForm">
+	<form class="loginForm" action="">
+	    <p class="loginText">Вход</p>
+	    <input class="loginField" type="text" placeholder="Логин">
+	    <input class="passwordField" type="password" placeholder="Пароль">
+	    <div class="checkBoxDiv">
+		<input class="checkBoxField" type="checkbox" id="checkBoxField">
+		<label class="checkBoxLabel" for="checkBoxField">Запомнить</label>
+	    </div>
+	    <a href="index-channels_auth.html"><input class="loginButton" type="button" value="Войти"></a>
+	</form>
+    </div>
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
